@@ -14,11 +14,12 @@
   display: flex;
   width: 55%;
   height: 100vh;
-  padding: 180px 50px;
+  padding: 120px 50px;
   flex-direction: column;
   justify-content: center;
   background-color: #000;
   align-items: flex-start;
+  gap: 20px;
 }
 
 .header__text-container {
@@ -37,25 +38,27 @@
 }
 
 .quotation__icon-container {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 
-.quotation__icon {
+.quotation__icon-container img {
+  width: 100%;
   border-radius: 50%;
+  z-index: 2;
   filter: grayscale();
 }
 
 .header__title,
 .header__subtitle {
   font-family: "Unbounded";
-  font-size: 40px;
   text-align: left;
   color: #fff;
 }
 
 .header__title {
   font-weight: 800;
+  font-size: calc(10px + 20 * (100vw / 1080));
 }
 
 .header__subtitle {
