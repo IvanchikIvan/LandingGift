@@ -14,7 +14,7 @@
   display: flex;
   width: 55%;
   height: 100vh;
-  padding: 120px 50px;
+  padding: calc(60px + 60 * (100vw / 1080)) calc(20px + 30 * (100vw / 1080));;
   flex-direction: column;
   justify-content: center;
   background-color: #000;
@@ -73,4 +73,13 @@
 
 .memories {
   color: gold;
+}
+
+@media (max-width: 810px) {
+  .header__text-container {
+    width: 100%;
+  }
+  .header__quotation {
+    width: 100%;
+  }
 }
