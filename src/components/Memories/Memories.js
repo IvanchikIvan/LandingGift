@@ -6,6 +6,7 @@ const Memories = () => {
       <div className="memories__container">
         <div className="memories__list-container">
           <h1 className="memories__list-title">Наши воспоминания</h1>
+          <p className="memories__list-desription">Эти моменты согревают мне душеньку, когда вновь возникают в моей голове.<br></br> Спасибо за них, Маш</p>
           <div className="memories__list">
             <div className="memories__list-item">
               <div className="memories__item-container">
