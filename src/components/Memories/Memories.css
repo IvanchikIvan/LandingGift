@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap");
+
+.memories {
+  width: 100%;
+  height: 100vh;
+  background-color: #c6c5b9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Unbounded";
+}
+.memories__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(10px + 80 * (100vw / 1080));
+}
+.memories__list-container,
+.memories__list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.memories__list-title {
+  font-weight: 700;
+  font-size: calc(10px + 15 * (100vw / 1080));
+}
+
+.memories__list-item {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.memories__item-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.memories__list hr {
+  background-color: #88877e;
+  height: 0.1px;
+  width: 60%;
+}
+
+.memories__list-name {
+}
+
+.memories__list-date {
+}
