@@ -28,9 +28,45 @@ const Memories = () => {
             <div className="memories__list-item">
               <div className="memories__item-container">
                 <div className="memories__list-name">
-                  <p>Первая встреча</p>
+                  <p>Наш велеколепный танец-открытка</p>
                 </div>
-                <div className="memories__list-date">25.06.2023</div>
+                <div className="memories__list-date">28.06.2023</div>
+              </div>
+            </div>
+            <hr></hr>
+            <div className="memories__list-item">
+              <div className="memories__item-container">
+                <div className="memories__list-name">
+                  <p>Посидел у вас в шкафу</p>
+                </div>
+                <div className="memories__list-date">05.07.2023</div>
+              </div>
+            </div>
+            <hr></hr>
+            <div className="memories__list-item">
+              <div className="memories__item-container">
+                <div className="memories__list-name">
+                  <p>Конец смены</p>
+                </div>
+                <div className="memories__list-date">07.07.2023</div>
+              </div>
+            </div>
+            <hr></hr>
+            <div className="memories__list-item">
+              <div className="memories__item-container">
+                <div className="memories__list-name">
+                  <p>Твой замечательный, трогательный подарок</p>
+                </div>
+                <div className="memories__list-date">14.07.2023</div>
+              </div>
+            </div>
+            <hr></hr>
+            <div className="memories__list-item">
+              <div className="memories__item-container">
+                <div className="memories__list-name">
+                  <p>C Новым годом</p>
+                </div>
+                <div className="memories__list-date">31.12.2023</div>
               </div>
             </div>
           </div>
