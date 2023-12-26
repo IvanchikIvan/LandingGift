@@ -15,9 +15,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:30px;
   padding: calc(10px + 80 * (100vw / 1080));
 }
+
+.memories__list-desription {
+    text-align: left;
+}
+
+.memories__list-container {
+    gap: 100px;
+}
+
+.memories__list {
+    gap: 20px;
+}
+
 .memories__list-container,
 .memories__list {
   width: 100%;
@@ -26,7 +38,6 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
 }
 .memories__list-title {
   font-weight: 700;
@@ -34,7 +45,7 @@
 }
 
 .memories__list-item {
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +62,7 @@
 .memories__list hr {
   background-color: #88877e;
   height: 0.1px;
-  width: 60%;
+  width: 80%;
 }
 
 .memories__list-name {
