@@ -1,0 +1,10 @@
+.carousel {
+    padding:calc(10px + 10 * (100vw / 1080)) calc(10px + 30 * (100vw / 1080));
+    background: #000;
+}
+
+.carousel__item {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
