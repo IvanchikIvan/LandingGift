@@ -21,7 +21,7 @@
 }
 
 .memories__list-container {
-  gap: calc(100px + 50 * (100vw / 1080));
+  gap: calc(70px + 40 * (100vw / 1080));
 }
 
 .memories__list {
@@ -42,7 +42,7 @@
 }
 
 .memories__list-item {
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,15 +59,15 @@
 .memories__list hr {
   background-color: #88877e;
   height: 0.1px;
-  width: 80%;
+  width: 70%;
 }
 
 .memories__list-name {
-  font-size: calc(8px + 8 * (100vw / 1080));
+  font-size: calc(8px + 5 * (100vw / 1080));
 }
 
 .memories__list-date {
-  font-size: calc(8px + 8 * (100vw / 1080));
+  font-size: calc(8px + 5 * (100vw / 1080));
 }
 
 @media (max-width: 800px) {
