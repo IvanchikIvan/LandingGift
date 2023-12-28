@@ -12,6 +12,7 @@ const IWGTC = () => {
             </div>
             <div className="i-was-glad-to-come-row__text-container">
               <div className="i-was-glad-to-come-row__text">
+                <h2>Прибытие в тверь</h2>
                 <p>
                   Я был бесконечно рад приехать к вам. Самые тёплые чувства,
                   которые я испытал с вами в лагере снова меня достанут
