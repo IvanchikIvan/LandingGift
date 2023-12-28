@@ -37,6 +37,7 @@
 }
 .i-was-glad-to-come-row__text {
     width: 80%;
-    text-align: center;
+    text-align: left;
     font-family: "Unbounded";
+    font-size: calc(10px + 10 * (100vw / 1080));
 }
