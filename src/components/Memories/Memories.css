@@ -1,11 +1,12 @@
 .memories {
   width: 100%;
   height: 100vh;
-  background-color: #c6c5b9;
+  background-color: #64B6AC;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Unbounded";
+  color: whitesmoke;
 }
 .memories__container {
   width: 100%;
@@ -57,7 +58,7 @@
 }
 
 .memories__list hr {
-  background-color: #88877e;
+  background-color: #3e857c;
   height: 0.1px;
   width: 70%;
 }
