@@ -1,7 +1,7 @@
 .i-was-glad-to-come {
     width: 100%;
     padding: calc(10px + 50 * (100vw / 1080)) 0;
-    background-color: #52B788;
+    background-color: #822EFF;
 }
 .i-was-glad-to-come__container {
     display: flex;
@@ -22,13 +22,26 @@
     align-items: center;
     justify-content: center;
 }
+
+
+
 .i-was-glad-to-come-row__icon {
     flex:1;
 }
 
+.i-was-glad-to-come__row:last-child .i-was-glad-to-come-row__icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.i-was-glad-to-come__row:last-child .i-was-glad-to-come-row__icon img {
+    border-radius: 50px 0 0 50px;
+    box-shadow: #6d21df 0 0 10px 10px, inset 10px 0 10px #822EFF;
+}
+
 .i-was-glad-to-come-row__icon img {
     border-radius: 0 50px 50px 0;
-    box-shadow: rgba(0, 0, 0, 0.459) 0 0 10px 1px;
+    box-shadow: #6d21df 0 0 10px 10px, inset 10px 0 10px #822EFF;
 }
 
 .i-was-glad-to-come-row__text-container {
