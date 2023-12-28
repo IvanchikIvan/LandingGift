@@ -9,6 +9,9 @@ import gallery_3 from "../../Assets/gallery_3.jpg";
 import gallery_4 from "../../Assets/gallery_4.jpg";
 import gallery_5 from "../../Assets/gallery_5.jpg";
 import gallery_6 from "../../Assets/gallary_6.jpg";
+import gallery_7 from "../../Assets/gallery_7.png";
+import gallery_8 from "../../Assets/gallery_8.png";
+import gallery_9 from "../../Assets/gallery_9.png";
 
 const ImageCarousel = () => {
   const settings = {
@@ -26,6 +29,9 @@ const ImageCarousel = () => {
     gallery_4,
     gallery_5,
     gallery_6,
+    gallery_7,
+    gallery_8,
+    gallery_9,
   ];
 
   return (

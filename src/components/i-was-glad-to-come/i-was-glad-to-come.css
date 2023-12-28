@@ -1,0 +1,42 @@
+.i-was-glad-to-come {
+    width: 100%;
+    padding: calc(10px + 50 * (100vw / 1080)) 0;
+}
+.i-was-glad-to-come__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.i-was-glad-to-come__rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.i-was-glad-to-come__row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.i-was-glad-to-come-row__icon {
+    flex:1;
+}
+
+.i-was-glad-to-come-row__icon img {
+    border-radius: 0 50px 50px 0;
+}
+
+.i-was-glad-to-come-row__text-container {
+    flex:2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i-was-glad-to-come-row__text {
+    width: 80%;
+    text-align: center;
+    font-family: "Unbounded";
+}
