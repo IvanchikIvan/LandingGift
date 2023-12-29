@@ -1,7 +1,6 @@
 .thank-you {
   width: 100%;
-  background: #ff495c;
-  height: 900px;
+  background: #F9FBF2;
 }
 
 .thank-you__container {
@@ -11,17 +10,17 @@
 .thank-you__list-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  height: 100%;
   align-items: flex-start;
-  gap: 40px;
+  gap: calc(30px + 40 * (100vw / 1080));
   padding: calc(10px + 10 * (100vw / 1080)) calc(10px + 30 * (100vw / 1080));
 }
 .thank-you__list-title {
   font-family: "Unbounded";
   font-weight: 700;
-  color: whitesmoke;
-  text-shadow: #ffffff 0 0 10px;
-  font-size: calc(15px + 15 * (100vw / 1080));
+  text-shadow: #0e0e0e 0 0 10px;
+  font-size: calc(20px + 20 * (100vw / 1080));
 }
 .thank-you__title-text {
 }
@@ -34,7 +33,6 @@
 }
 .thank-you__list-item {
     font-family: "Unbounded";
-    color: whitesmoke;
     text-align: left;
-    font-size: calc(8px + 5 * (100vw / 1080));
+    font-size: calc(8px + 10 * (100vw / 1080));
 }
