@@ -17,7 +17,7 @@ const Thankyou = () => {
   return (
     <div className="thank-you">
       <div className="thank-you__container">
-        <animated.div className="thank-you__list-container" style={props} ref={r}>
+        <animated.div className="thank-you__list-container" style={props} ref={ref}>
           <div className="thank-you__list-title">
             <h1 className="thank-you__title-text">Спасибо за...😣</h1>
           </div>
