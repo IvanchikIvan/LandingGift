@@ -29,11 +29,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
 }
 .thank-you__list-item {
     font-family: "Unbounded";
     color: whitesmoke;
+    text-align: left;
     font-size: calc(8px + 5 * (100vw / 1080));
 }
