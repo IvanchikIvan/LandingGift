@@ -1,23 +1,28 @@
 import React from "react";
-import { animated, config, useInView } from "react-spring";
+import { animated, useSpring, config, useInView } from "react-spring";
 import "./thank-you.css";
 
 const Thankyou = () => {
-    const [ref, props] = useInView(
+    const [ref, springs] = useInView(
         () => ({
-          from: { opacity: 0, x: -1500},
-          to: { opacity: 1, x: 0},
-          config: config["molasses"],
+          from: {
+            opacity: 0,
+            x: -100,
+          },
+          to: {
+            opacity: 1,
+            x: 0,
+          },
         }),
         {
-            rootMargin: '-30% 0%',
+          rootMargin: '-40% 0%',
         }
-      );
+      )
 
   return (
     <div className="thank-you">
-      <div className="thank-you__container">
-        <animated.div className="thank-you__list-container" style={props} ref={ref}>
+      <animated.div className="thank-you__container" ref={ref} style={springs}>
+        <div className="thank-you__list-container">
           <div className="thank-you__list-title">
             <h1 className="thank-you__title-text">Спасибо за...😣</h1>
           </div>
@@ -50,8 +55,8 @@ const Thankyou = () => {
               <p>🤯 Наши общие воспоминания</p>
             </div>
           </div>
-        </animated.div>
-      </div>
+        </div>
+      </animated.div>
     </div>
   );
 };
