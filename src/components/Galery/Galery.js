@@ -41,7 +41,7 @@ const ImageCarousel = () => {
           <div key={index}>
             <img
               src={image}
-              alt={`Image ${index + 1}`}
+              alt=''
               className="carousel__item"
             />
           </div>

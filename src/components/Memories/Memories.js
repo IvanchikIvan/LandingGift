@@ -2,9 +2,7 @@ import { useInView, animated } from "react-spring";
 import "./Memories.css";
 import React from "react";
 
-
 const Memories = () => {
-
   const [ref, springs] = useInView(
     () => ({
       from: {
@@ -17,16 +15,19 @@ const Memories = () => {
       },
     }),
     {
-      rootMargin: '-50% 0%',
+      rootMargin: "-50% 0%",
     }
-  )
+  );
 
   return (
-    <div className="memories" ref={ref} >
+    <div className="memories" ref={ref}>
       <div className="memories__container">
         <div className="memories__list-container">
           <h1 className="memories__list-title">Наши воспоминания</h1>
-          <p className="memories__list-desription">Эти моменты согревают мне душеньку, когда вновь возникают в моей голове.<br></br> Спасибо за них, Маш</p>
+          <p className="memories__list-desription">
+            Эти моменты согревают мне душеньку, когда вновь возникают в моей
+            голове.<br></br> Спасибо за них, Маш
+          </p>
           <div className="memories__list">
             <animated.div className="memories__list-item" style={springs}>
               <div className="memories__item-container">

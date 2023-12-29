@@ -1,5 +1,5 @@
 import React from "react";
-import { animated, useSpring, config, useInView } from "react-spring";
+import { animated, useInView } from "react-spring";
 import "./thank-you.css";
 
 const Thankyou = () => {
