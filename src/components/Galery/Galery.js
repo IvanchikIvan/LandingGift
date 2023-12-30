@@ -1,5 +1,4 @@
-import React from "react";
-import Slider from "react-slick";
+import React, { useEffect, useState} from "react";
 import "./Galery.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,15 +12,8 @@ import gallery_7 from "../../Assets/gallery_7.png";
 import gallery_8 from "../../Assets/gallery_8.png";
 import gallery_9 from "../../Assets/gallery_9.png";
 
-const ImageCarousel = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-  };
-
+const Carousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
   const imagesList = [
     gallery_1,
     gallery_2,
@@ -34,21 +26,29 @@ const ImageCarousel = () => {
     gallery_9,
   ];
 
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesList.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? imagesList.length - 1 : prevIndex - 1
+    );
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(nextSlide, 3000); // автоматическое переключение каждые 3 секунды
+
+    return () => clearInterval(intervalId);
+  }, [currentIndex]);
+
   return (
     <div className="carousel">
-      <Slider {...settings}>
-        {imagesList.map((image, index) => (
-          <div key={index}>
-            <img
-              src={image}
-              alt=''
-              className="carousel__item"
-            />
-          </div>
-        ))}
-      </Slider>
+      <button onClick={prevSlide}>Previous</button>
+      <img src={imagesList[currentIndex]} alt={`slide ${currentIndex + 1}`} />
+      <button onClick={nextSlide}>Next</button>
     </div>
   );
 };
 
-export default ImageCarousel;
+export default Carousel
