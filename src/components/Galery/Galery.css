@@ -7,9 +7,10 @@
   height: max-content;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 400px;
   padding: 30px;
+  flex-direction: row;
 }
 
 img {
@@ -19,28 +20,16 @@ img {
   object-fit: cover;
 }
 
-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #3498db;
-  color: #ffffff;
-  font-size: 18px;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  outline: none;
-  transition: background-color 0.3s ease;
+.prevButton, .nextButton {
+  width: 60px;
+  height: 60px;
 }
 
-button:hover {
-  background-color: #2980b9;
+.prevButton img, .nextButton img{
+  width: 100%;
+  height: 100%;
 }
 
-button:first-child {
-  left: 10px;
-}
-
-button:last-child {
-  right: 10px;
+.prevButton{
+  transform: scale(-1, -1);
 }

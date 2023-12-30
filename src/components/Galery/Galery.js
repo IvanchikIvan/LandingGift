@@ -11,6 +11,7 @@ import gallery_6 from "../../Assets/gallary_6.jpg";
 import gallery_7 from "../../Assets/gallery_7.png";
 import gallery_8 from "../../Assets/gallery_8.png";
 import gallery_9 from "../../Assets/gallery_9.png";
+import arrow from '../../Assets/arrow.svg'
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,9 +45,9 @@ const Carousel = () => {
 
   return (
     <div className="carousel">
-      <button onClick={prevSlide}>Previous</button>
+      <img className="prevButton" onClick={prevSlide} alt='' src={arrow}></img>
       <img src={imagesList[currentIndex]} alt={`slide ${currentIndex + 1}`} />
-      <button onClick={nextSlide}>Next</button>
+      <img className="nextButton" onClick={nextSlide} alt='' src={arrow}></img>
     </div>
   );
 };
