@@ -1,10 +1,46 @@
 .carousel {
-    padding:calc(10px + 10 * (100vw / 1080)) calc(10px + 30 * (100vw / 1080));
-    background: #000;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  padding: 30px;
 }
 
-.carousel__item {
-    width: 300px;
-    height: 500px;
-    object-fit: cover;
+img {
+  height: 100%;
+  width: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:first-child {
+  left: 10px;
+}
+
+button:last-child {
+  right: 10px;
 }
